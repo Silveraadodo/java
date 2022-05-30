@@ -28,8 +28,10 @@ public void setNom(String nom){
 public void setAdresse(String adresse){
     this.adresse= adresse;
 }
-public String affiche(){
-    return "Id: "+id+"Nom :"+nom+"Adresse :"+adresse;
+@Override
+public String toString() {
+    return "Hopital [adresse=" + adresse + ", id=" + id + ", nom=" + nom + "]";
 }
+
 
 }

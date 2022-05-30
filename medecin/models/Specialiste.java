@@ -3,6 +3,8 @@ public class Specialiste extends Medecin {
     private int nbreAnnee;
 
     public Specialiste(){
+        super();//classe
+        type="Specialiste";
     }
     public String getSpecialite(){
         return specialite;
@@ -14,8 +16,12 @@ public class Specialiste extends Medecin {
         return nbreAnnee;
     }
 
-    public void setnbreAnnee (int nbreAnnee){
+    public void nbreAnnee (int nbreAnnee){
         this.nbreAnnee=nbreAnnee;
+    }
+    @Override
+    public String toString() {
+        return "Specialiste :" +super.toString()+"nbreAnnee=" + nbreAnnee + ", specialite=" + specialite + "]";
     }
    
     
